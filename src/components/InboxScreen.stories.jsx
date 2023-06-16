@@ -31,6 +31,7 @@ export const Default = {
       ],
     },
   },
+
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
     // Waits for the component to transition from the loading state
@@ -43,6 +44,7 @@ export const Default = {
       await fireEvent.click(canvas.getByLabelText('pinTask-3'));
     });
   },
+
 };
 
 export const Error = {
